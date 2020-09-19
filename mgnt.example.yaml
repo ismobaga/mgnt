@@ -1,0 +1,18 @@
+
+networks:
+    - { 
+      name: "name", # Required
+      driver: "bridge", # Name of the driver used to create the network
+      options: {} #  Driver options as a key-value dictionary
+      # https://docker-py.readthedocs.io/en/stable/networks.html  
+    }
+        
+stacks:
+  - {
+    dir: "/path/to/folder", # Required
+    file: "docker-compose.yml", # OPtinnal default docker-compose.{yml, yaml}
+    name: 'project-name'
+  }
+  - {
+    dir: "/home/example/",
+  }
